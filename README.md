@@ -1,5 +1,4 @@
 # Angular Tutorial about Communication between Components
-Angular Tutorial about Communication between Components
 
 ### Description
 When I started learning Angular, I had trouble finding simple methods to make components communicate with each other. Now, I am more experienced so I made this tutorial to help novice web developers choose a method depending on their needs. It includes 6 different methods from easiest to hardest. Click [here](https://aggelos24.github.io/angular-components-communication/) to test it and send me feedback.
