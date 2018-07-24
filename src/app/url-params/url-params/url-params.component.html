@@ -1,0 +1,27 @@
+<div class="flex-container">
+	<button class="navigation" (click)="previousPage()"> Previous </button>
+	<button class="navigation" (click)="nextPage()"> Next </button>
+</div>
+<div class="px-20px">
+	<h3 class="text-center"> 3. URL Parameters </h3>
+	<p>
+		A <a href="https://en.wikipedia.org/wiki/Query_string" target="_blank"> Query string </a> is the part of URL that contains data. 
+		We can save variables we want to share as <i>url parameters</i>, and then any component can parse and read them. In Angular, there  
+		are <i> route parameters </i> and <i>query parameters</i>; <i> route parameters </i> are not optional and you must define them 
+		in <i>route configurations</i>, in contrast to <i>query parameters</i>. For the above reasons, I chose to use 
+		<i> query parameters </i> for this example.
+	</p>
+	<p>
+		<b class="red-letters"> Con: </b> User's private data must not be part of the URL.
+	</p>
+	
+	<div class="component-container mt-5px">
+		First Component <br>
+		<app-first></app-first>
+	</div>
+
+	<div class="component-container mt-5px">
+		Second Component <br>
+		<app-second></app-second>
+	</div>
+</div>

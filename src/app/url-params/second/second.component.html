@@ -1,0 +1,9 @@
+<div class="mt-10px ml-5px">
+	<ng-container *ngIf="!noData; else elseTemplate">
+		<b> Data from URL Parameters </b> <br>
+		First Name: {{ data.firstName }} <br>
+		Last Name: {{ data.lastName }} <br>
+		Address: {{ data.address }} <br>
+	</ng-container>
+	<ng-template #elseTemplate> No data from URL </ng-template>
+</div>

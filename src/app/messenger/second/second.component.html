@@ -1,0 +1,13 @@
+<div class="mt-10px ml-5px">
+	<ng-container *ngIf="!noData; else elseTemplate">
+		<b> Message </b> <br>
+		To: {{ message.to }} <br>
+		Data: <br>
+		<div class="ml-5px">
+			First Name: {{ message.data.firstName }} <br>
+			Last Name: {{ message.data.lastName }} <br>
+			Address: {{ message.data.address }} <br>
+		</div>
+	</ng-container>
+	<ng-template #elseTemplate> No data yet </ng-template>
+</div>

@@ -1,0 +1,28 @@
+<div class="flex-container">
+	<button class="navigation" (click)="previousPage()"> Previous </button>
+	<button class="navigation" (click)="nextPage()"> Next </button>
+</div>
+<div class="px-20px">
+	<h3 class="text-center"> 6. Messenger Service </h3>
+	<p>
+		We create a service which has a 
+		<a href="http://reactivex.io/rxjs/manual/overview.html#behaviorsubject" target="_blank"> BehaviorSubject </a> and inject it into 
+		both the sender and the recipients. A <i> BehaviorSubject </i> stores the last emitted value from sender. When a recipient 
+		subscribes to <i> BehaviorSubject </i>, it receives its current value and every emitted value after that until it unsubscribes.
+		This is an advantage over a <a href="http://reactivex.io/rxjs/manual/overview.html#subject" target="_blank">Subject</a>, because if 
+		we use a <i> Subject </i> and the sender emits a message before the recipient subscribes, the message will be lost.
+	</p>
+	<p>
+		<b class="red-letters"> Con: </b> If there are multiple senders at the same time, some messages may be lost.
+	</p>
+	
+	<div class="component-container mt-5px">
+		First Component <br>
+		<app-first></app-first>
+	</div>
+
+	<div class="component-container mt-5px">
+		Second Component <br>
+		<app-second></app-second>
+	</div>
+</div>

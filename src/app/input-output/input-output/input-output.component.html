@@ -1,0 +1,21 @@
+<div class="flex-container">
+	<button class="navigation" (click)="previousPage()"> Previous </button>
+	<button class="navigation" (click)="nextPage()"> Next </button>
+</div>
+<div class="px-20px">
+	<h3 class="text-center"> 4. Parent-Child Communication (selector) </h3>
+	<p>
+		When we want to call a component (child) inside another component (parent), we just have to place an HTML element which tagname is 
+		the selector property of the child component.
+	</p>
+	<p>
+		By using <a href="https://angular.io/api/core/Input" target="_blank"> Input </a> decorator, parent component can pass a variable 
+		to child component. By using <a href="https://angular.io/api/core/Output" target="_blank"> Output </a> decorator, child component 
+		can emit an event to which parent component will react and read the updated value.
+	</p>
+	
+	<div class="component-container mt-5px">
+		Parent Component <br>
+		<app-parent></app-parent>
+	</div>
+</div>

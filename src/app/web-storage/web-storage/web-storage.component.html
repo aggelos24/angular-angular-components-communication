@@ -1,0 +1,23 @@
+<div class="flex-container">
+	<button class="navigation" (click)="previousPage()"> Previous </button>
+	<button class="navigation" (click)="nextPage()"> Next </button>
+</div>
+<div class="px-20px">
+	<h3 class="text-center"> 2. Web Storage </h3>
+	<p>
+		With <a class="no-break" href="https://en.wikipedia.org/wiki/Web_storage" target="_blank">Web Storage</a>, we can store variables 
+		locally in browser. There are two mechanisms to do it, <i> sessionStorage </i> and <i>localStorage</i>. While in
+		<i> sessionStorage </i> data are stored as long as the tab is open, in <i> localStorage </i> data are stored forever. So I chose 
+		<i> sessionStorage </i> to use for this example, because there is no way we will end up with junk in our browser 
+		local storage.
+	</p>
+	<p>
+		<b class="red-letters"> Cons: </b> 1) We can only store strings, 2) If the components run at the same time, there is no way for the 
+		recipient to be notified when the sender sends the message in order to update itself. 
+	</p>
+	
+	<div class="component-container mt-5px">
+		First Component <br>
+		<app-first></app-first>
+	</div>
+</div>

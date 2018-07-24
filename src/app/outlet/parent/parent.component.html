@@ -1,0 +1,8 @@
+<div class="mt-10px ml-5px">
+	<input type="text" class="mt-5px" #firstName placeholder="First Name"> <br>
+	<input type="text" class="mt-5px" #lastName placeholder="Last Name"> <br>
+	<input type="text" class="mt-5px" #address placeholder="Address"> <br>
+	<button [ngClass]="{'disabled': buttonDisabled}" class="submit mt-5px" [disabled]="buttonDisabled" (click)="navigateChild(firstName.value, lastName.value, address.value)"> Navigate to Child </button>
+</div>
+
+<router-outlet (activate)='onActivate($event)' (deactivate)='onDeactivate($event)'></router-outlet>

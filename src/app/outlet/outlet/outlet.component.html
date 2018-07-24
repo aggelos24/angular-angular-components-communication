@@ -1,0 +1,22 @@
+<div class="flex-container">
+	<button class="navigation" (click)="previousPage()"> Previous </button>
+	<button class="navigation" (click)="nextPage()"> Next </button>
+</div>
+<div class="px-20px">
+	<h3 class="text-center"> 5. Parent-Child Communication (router-outlet) </h3>
+	<p>
+		<a class="no-break" href="https://angular.io/api/router/RouterOutlet" target="_blank"> router-outlet </a> is a directive we place 
+		in our code, so Angular will know where to place the corresponding component based on the current URL.
+	</p>
+	<p>
+		Moreover, <i> router-outlet </i> emits an <i> activate event </i> every time a component is being instantiated, and a 
+		<i> deactivate event </i> when it is being destroyed. These events provide access to child component instance, which means that 
+		the parent component can change any public variable and call any public function that belongs to the child.
+	</p>
+	<p> <b class="red-letters"> Con: </b> Components communicate only when child is being instantiated or destroyed. </p>
+	
+	<div class="component-container mt-5px">
+		Parent Component <br>
+		<app-parent></app-parent>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+<div class="flex-container">
+	<button class="navigation" (click)="previousPage()"> Previous </button>
+	<button class="navigation" (click)="nextPage()"> Next </button>
+</div>
+<div class="px-20px">
+	<h3 class="text-center"> 1. Sharing Variables via Service </h3>
+	<p>
+		This is the easiest method, we create a service which has the variables we want to be shared between the components. We inject the 
+		service into both components, so when one component changes the variable, the other component will be instantly updated.
+	</p>
+	<p>
+		<b class="red-letters"> Con: </b> This method is intended for testing only, because it is not compatible  with 
+		<a class="no-break" href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank"> Model–view–controller </a>
+		architectural pattern.
+	</p>
+	
+	<div class="component-container mt-5px">
+		First Component <br>
+		<app-first></app-first>
+	</div>
+
+	<div class="component-container mt-5px">
+		Second Component <br>
+		<app-second></app-second>
+	</div>
+</div>
