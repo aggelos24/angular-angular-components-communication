@@ -12,7 +12,7 @@ export class WebStorageComponent implements OnInit {
 	@HostListener('document:keydown', ['$event'])				//when key is pressed
 	handleKeyboardEvent(event: KeyboardEvent) {
 		if (event.key == 'ArrowRight') {				//if right arrow is pressed
-			this.nextPage();												//go to next page
+			this.nextPage();					//go to next page
 		}
 		else if (event.key == 'ArrowLeft') {				//if left arrow is pressed
 			this.previousPage();					//go to previous page
