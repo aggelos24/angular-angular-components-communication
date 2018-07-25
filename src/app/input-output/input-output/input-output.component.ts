@@ -15,7 +15,7 @@ export class InputOutputComponent implements OnInit {
 			this.nextPage();							//go to next page
 		}
 		else if (event.key == 'ArrowLeft') {						//if left arrow is pressed
-			this.previousPage();													//go to previous page
+			this.previousPage();							//go to previous page
 		}
 	}
 	
