@@ -12,7 +12,7 @@ export class IntroductionComponent implements OnInit {
 	@HostListener('document:keydown', ['$event'])						//when key is pressed
 	handleKeyboardEvent(event: KeyboardEvent) {
 		if (event.key == 'ArrowRight') {						//if right arrow is pressed
-			this.nextPage();													//go to next page
+			this.nextPage();							//go to next page
 		}
 	}
 	
