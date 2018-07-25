@@ -12,7 +12,7 @@ export class ConclusionComponent implements OnInit {
 	@HostListener('document:keydown', ['$event'])						//when key is pressed
 	handleKeyboardEvent(event: KeyboardEvent) {
 		if (event.key == 'ArrowLeft') {							//if left arrow is pressed
-			this.previousPage();												//go to previous page
+			this.previousPage();							//go to previous page
 		}
 	}
 	
