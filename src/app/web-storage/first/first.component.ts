@@ -18,6 +18,6 @@ export class FirstComponent implements OnInit {
 		sessionStorage.setItem('lastName', lastname);
 		sessionStorage.setItem('address', address);
 		
-		this.componentEnabled = true;						//enable SecondComponent					
+		this.componentEnabled = true;						//enable SecondComponent		
 	}
 }
