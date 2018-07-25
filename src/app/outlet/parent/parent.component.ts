@@ -12,7 +12,7 @@ import { Data } from '../../interfaces/Data';
 export class ParentComponent implements OnInit {
 	data: Data = {};
 	
-	buttonDisabled: boolean;													//if true 'Navigate to Child' button is disabled
+	buttonDisabled: boolean;								//if true 'Navigate to Child' button is disabled
 	
 	@ViewChild("firstName") inputFirstname: ElementRef;					//get DOM elements from ids
 	@ViewChild("lastName") inputLastName: ElementRef;
@@ -28,7 +28,7 @@ export class ParentComponent implements OnInit {
 		if (componentRef instanceof ChildComponent) {					//if it is the child we want
 			componentRef.setData(this.data);					//set its data from parent's form data
 			
-			this.buttonDisabled = true;											//'Navigate to Child' button is disabled	
+			this.buttonDisabled = true;						//'Navigate to Child' button is disabled	
 		}
 	}
 	
