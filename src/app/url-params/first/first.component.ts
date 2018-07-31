@@ -10,10 +10,10 @@ export class FirstComponent {
 	
 	storeUrlParameters(firstName, lastName, address) {
 		this.router.navigate(['/url-params'],					//navigate to current page with form data as query parameters
-							 { queryParams: {
-								 firstName: firstName,
-								 lastName: lastName,
-								 address: address
-							 }});
+				     { queryParams: {
+					     firstName: firstName,
+					     lastName: lastName,
+					     address: address
+				     }});
 	}
 }
