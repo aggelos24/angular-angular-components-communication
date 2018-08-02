@@ -26,8 +26,8 @@ export class SecondComponent implements OnInit, OnDestroy {
 			filter(message => (message && message.to == 'SecondComponent'))		//reject message if message's recipient is not this component
 		)
 		.subscribe(message => {								//subscribe to service's response
-				this.message = message;						//update variables
-				this.noData = false;
+			this.message = message;							//update variables
+			this.noData = false;
 		});
 	}
 	
