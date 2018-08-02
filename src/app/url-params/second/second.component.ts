@@ -18,9 +18,9 @@ export class SecondComponent implements OnInit, OnDestroy {
 	constructor(private route: ActivatedRoute) {}
 
 	ngOnInit() {
-		this.sub = this.route.queryParamMap.subscribe((params: ParamMap) => {
-											//subscribe to change of query parameters
-			this.noData = true;
+		this.sub = this.route.queryParamMap.subscribe((params: ParamMap) => {	//subscribe to change of query parameters
+			this.noData = true;						//initialize variable
+			
 			if (params.has('firstName')) {					//if there is query parameter with specific key
 				this.data.firstName = params.get('firstName');		//update variables
 				this.noData = false;
