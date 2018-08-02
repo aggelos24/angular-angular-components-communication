@@ -13,20 +13,26 @@ export class SecondComponent implements OnInit, OnDestroy {
 	
 	data: Data = {};								//variable for storing variables for query parameters
 	
-	noData: boolean;								//true if no data have been received
+	noData: boolean;								//true if no data from query parameters
 
 	constructor(private route: ActivatedRoute) {}
 
 	ngOnInit() {
-		this.sub = this.route.queryParams.subscribe((params: Data) => {
+		this.sub = this.route.queryParamMap.subscribe((params: ParamMap) => {
 											//subscribe to change of query parameters
-				if (Object.keys(params).length != 0) {			//if there are query parameters
-					this.data = params;				//update variables
-					this.noData = false;
-				}
-				else {
-					this.noData = true;
-				}
+			this.noData = true;
+			if (params.has('firstName')) {					//if there is query parameter with specific key
+				this.data.firstName = params.get('firstName');		//update variables
+				this.noData = false;
+			}
+			if (params.has('lastName')) {					//if there is query parameter with specific key
+				this.data.lastName = params.get('lastName');		//update variables
+				this.noData = false;
+			}
+			if (params.has('address')) {					//if there is query parameter with specific key
+				this.data.address = params.get('address');		//update variables
+				this.noData = false;
+			}
 		});
 	}
 
