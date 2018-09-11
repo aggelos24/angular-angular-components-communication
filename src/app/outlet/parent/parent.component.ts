@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 import { ChildComponent } from '../child/child.component';
 
-import { Data } from '../../interfaces/Data';
+import { Data } from '../../interfaces/data';
 
 @Component({
 	selector: 'app-parent',
