@@ -4,7 +4,7 @@ import { filter } from 'rxjs/operators';
 
 import { MessengerService } from '../messenger.service';
 
-import { Message } from '../../interfaces/Message';
+import { Message } from '../../interfaces/message';
 
 @Component({
 	selector: 'app-second',
