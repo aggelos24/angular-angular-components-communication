@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Data } from '../../interfaces/Data';
+import { Data } from '../../interfaces/data';
 
 @Component({
 	selector: 'app-child',
