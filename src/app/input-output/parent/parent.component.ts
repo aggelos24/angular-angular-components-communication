@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Data } from '../../interfaces/Data';
+import { Data } from '../../interfaces/data';
 
 @Component({
 	selector: 'app-parent',
