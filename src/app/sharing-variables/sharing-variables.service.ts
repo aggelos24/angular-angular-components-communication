@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { Data } from '../interfaces/Data';
+import { Data } from '../interfaces/data';
 
 @Injectable()
 export class SharingVariablesService {
